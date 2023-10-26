@@ -18,3 +18,4 @@ for arg in "$@"; do
 done
 
 source ./flatpak.sh
+source ./curl.sh

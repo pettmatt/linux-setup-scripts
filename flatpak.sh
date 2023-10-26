@@ -2,7 +2,7 @@
 
 if ! command -v flatpak &> /dev/null
 then
-	echo "Flatpak is not installed. Exiting program installation using Flatpak."
+	echo "Flatpak is not installed. Exiting installation that uses Flatpak."
 	exit 1
 fi
 
