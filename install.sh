@@ -19,3 +19,4 @@ done
 
 source ./flatpak.sh
 source ./curl.sh
+source ./sys-pacman.sh

@@ -40,3 +40,13 @@ then
 		flatpak install flathub org.mozilla.Thunderbird
 	fi
 fi
+
+if ! flatpak list | grep -q "org.mozilla.firefox"
+then
+	echo "Installing Firefox"
+	if [[ " ${args[@]} " =~ " -fy " ]]; then
+		flatpak install -y flathub org.mozilla.firefox
+	else
+		flatpak install flathub org.mozilla.firefox
+	fi
+fi

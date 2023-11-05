@@ -28,7 +28,7 @@ if [[ ! ${#args[@]} -eq 0 ]]; then
 	fi
 else
 	source ./flatpak-scripts/casual.sh
-	#source ./flatpak-scripts/gaming.sh
+	source ./flatpak-scripts/gaming.sh
 	source ./flatpak-scripts/dev-tools.sh
 fi
 
