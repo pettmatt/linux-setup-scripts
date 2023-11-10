@@ -8,7 +8,7 @@ if [[ ! ${#args[@]} -eq 0 ]]; then
 	fi
 else
 	#source ./sys-pacman/casual.sh
-	#source ./sys-pacman/gaming.sh
+	source ./sys-pacman/arch-gaming.sh
 	source ./sys-pacman/arch.sh
 fi
 
