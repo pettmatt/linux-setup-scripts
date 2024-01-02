@@ -27,3 +27,13 @@ then
 		sudo pacman -S firefox-developer-edition
 	fi
 fi
+
+if ! pacman -Q "noto-fonts" &> /dev/null
+then
+	echo "Installing Noto fonts"
+	if [[ " ${args[@]} " =~ " -fy " ]]; then
+		sudo pacman -S --noconfirm $(pacman -Ssq noto-fonts)
+	else
+		sudo pacman -S $(pacman -Ssq noto-fonts)
+	fi
+fi
